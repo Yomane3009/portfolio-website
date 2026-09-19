@@ -1,0 +1,6 @@
+.cine-stage video{opacity:.72;filter:contrast(1.12) saturate(.95)}
+.cine-vignette{background:radial-gradient(ellipse at center,transparent 16%,rgba(0,0,0,.28) 58%,rgba(0,0,0,.78) 100%)}
+.hero-v2{background:linear-gradient(180deg,rgba(3,3,3,.22),rgba(3,3,3,.62))}
+.section{background:rgba(3,3,3,.68)}
+.hero-watermark{left:8vw;right:auto;width:84vw;white-space:normal;font-size:clamp(4.5rem,14vw,15rem);line-height:.78}
+@media(max-width:700px){.hero-watermark{left:24px;width:calc(100vw - 48px);font-size:clamp(3.8rem,14vw,6rem)}}

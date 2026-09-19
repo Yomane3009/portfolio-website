@@ -1,0 +1,2 @@
+.desktop-nav{flex:1;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:0;max-width:540px;margin:0 auto;text-align:center}.desktop-nav a{display:block;padding:8px 4px;white-space:nowrap}.nav-status{min-width:185px;justify-content:flex-end}
+@media(max-width:700px){.desktop-nav{display:none}.nav-status{min-width:0}}

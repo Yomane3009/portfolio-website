@@ -1,0 +1,5 @@
+.hero-v2{min-height:max(100svh,850px);justify-content:flex-start}
+.hero-eyebrow{margin-top:126px}
+.hero-content{margin-top:28px}
+.telemetry{margin-top:42px}
+@media(max-width:700px){.hero-v2{min-height:max(100svh,760px)}.hero-eyebrow{margin-top:68px}.hero-content{margin-top:22px}.telemetry{margin-top:30px}}
