@@ -1,20 +1,18 @@
 # PORTFOLIO / Systems with a pulse
 
-A cinematic portfolio for a data engineer who likes the interface to feel as intentional as the architecture behind it.
+A cinematic portfolio for a data engineer who believes reliable systems deserve a sharp interface.
 
-This is not a static résumé page. It is a dark, responsive, cyberpunk experience built around a cursor-controlled and scroll-scrubbed video world, résumé-grounded storytelling, and small interactions that reward exploration.
-
-![Portfolio hero reference](docs/screenshots/01-hero.png)
+This is a dark, responsive portfolio built around a cursor-controlled, scroll-scrubbed video background and résumé-grounded storytelling.
 
 ## The Signal
 
-- **Cinematic video engine** — cursor position and Lenis scroll progress drive a 10-second MP4 through a smooth RAF/LERP seek loop.
+- **Cinematic video engine** — cursor position and Lenis scroll progress drive the background MP4 through a smooth RAF/LERP seek loop.
 - **Editorial hero** — Oswald headlines, outlined name watermark, telemetry metrics, and focused calls to action.
 - **Systems archive** — projects and skills shaped around ETL, HPCC ECL, Python, Talend, MySQL, Databricks, PySpark, and data reliability.
 - **Career timeline** — work experience and education combined into a filterable neon-spine journey.
 - **Credential orbit** — draggable 3D certification cylinder with inertia, auto-spin, pagination, and verification modal.
 - **Responsive by default** — mobile drawer navigation, touch-safe gallery dragging, and viewport-safe hero composition.
-- **Contact channel** — hosted form submission, copy-to-clipboard email action, and social links.
+- **Contact channel** — FormSubmit integration, copy-to-clipboard email action, and social links.
 
 ## Built With
 
@@ -51,7 +49,10 @@ src/
     page.tsx                 # Page composition
     layout.tsx               # Metadata and global styles
     globals.css              # Core design system and effects
-    hero-*.css               # Hero layout tuning
+    hero-frame.css           # Hero overflow and watermark sizing
+    hero-position.css        # Hero spacing and vertical flow
+    nav-alignment.css        # Navigation tab alignment
+    scroll-overrides.css     # Lenis scroll behavior override
     video-visibility.css     # Background contrast tuning
   components/
     CinematicVideo.tsx       # Cursor + scroll video engine
@@ -65,7 +66,6 @@ public/
   [Your_Name]_Resume_2026.pdf
 docs/
   Portfolio_Prompt_Playbook_Generic.pdf
-  screenshots/
 ```
 
 ## Runtime Assets
@@ -94,7 +94,7 @@ Every future push can trigger a fresh deployment automatically.
 
 ## Prompt Playbook
 
-The repository includes a reusable implementation guide with the original build prompts, QA prompts, deployment prompts, résumé-upload workflow, and visual references:
+The repository includes a reusable implementation guide with build prompts, QA prompts, deployment prompts, résumé-upload workflow, and visual guidance:
 
 [Open the generic portfolio prompt playbook](docs/Portfolio_Prompt_Playbook_Generic.pdf)
 
